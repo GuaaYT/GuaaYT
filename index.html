@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>SocialMedia</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+        <!-- Post Form -->
+        <section id="post-form">
+            <textarea id="new-post" placeholder="What's on your mind?" rows="3"></textarea>
+            <button onclick="createPost()">Post</button>
+        </section>
+
+        <!-- Post Feed -->
+        <section id="post-feed">
+            <h2>Feed</h2>
+            <div id="posts"></div>
+        </section>
+    </main>
+
+    <!-- Profile Page -->
+    <section id="profile" style="display: none;">
+        <h2>Your Profile</h2>
+        <div class="profile-details">
+            <p><strong>Username:</strong> user123</p>
+            <p><strong>Posts:</strong> <span id="post-count">0</span></p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
